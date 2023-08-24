@@ -1,0 +1,64 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../recursos/fondoInicio.jpg");
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    padding: 50px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.login .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.formulario .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: green;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.login .recuperar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.formulario .desplegable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desplegable .animacion{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+}
+
+
