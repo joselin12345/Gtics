@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
       <meta charset="UTF-8">
       <title>Telecripto</title>
@@ -10,19 +10,18 @@
       <div class="login">
 
         <div class="botones">
-            <a href="#" class="btn btn-success">Iniciar sesión</a>
-            <a href="#" class="btn btn-outline-danger">Registrase</a>
+            <a th:href="@{/login}" class="btn btn-success">Iniciar sesión</a>
+            <a th:href="@{/newUser}" class="btn btn-outline-danger">Registrase</a>
         </div>
 
         <div class="formulario">
 
             <form action="login" method="POST">
                 <div class="lineas">................................................................................................</div>
-                <div class="titulo">BIenvenido a Telecripto</div>
+                <div class="titulo">Bienvenido a Telecripto</div>
                 <div class="mb-3">
                     <input type="text" name="usuario" placeholder="Usuario" class="form-control">
                 </div>
-                <br>
                 <div class="mb-3">
                     <input type="text" name="contrasena" placeholder="Contraseña" class="form-control">
                 </div>

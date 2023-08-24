@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Telecripto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body >
+<div class="login">
+
+  <div class="botones">
+    <a th:href="@{/login}" class="btn btn-outline-success">Iniciar sesión</a>
+    <a th:href="@{/newUser}" class="btn btn-danger">Registrase</a>
+  </div>
+
+  <div class="formulario">
+
+    <form action="login" method="POST">
+      <div class="lineas">................................................................................................</div>
+      <div class="titulo">Registro de nuevo usuario</div>
+      <div class="mb-3">
+        <input type="text" name="nombre" placeholder="Nombre Completo" class="form-control">
+      </div>
+      <div class="mb-3">
+        <input type="text" name="usuario" placeholder="Usuario" class="form-control">
+      </div>
+      <div class="mb-3">
+        <input type="text" name="orreo" placeholder="Correo" class="form-control">
+      </div>
+      <div class="mb-3">
+        <input type="text" name="contrasena" placeholder="Contraseña" class="form-control">
+      </div>
+      <div class="mb-3">
+        <input type="text" name="repetir" placeholder="Repita su contraseña" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary" style="border-radius: 20px">Crear usuario</button>
+      <div class="lineas">...............................................................................................</div>
+    </form>
+  </div>
+
+  <div class="recuperar">
+    <a href="#">¿Haz olvidado tu contraseña?</a>
+
+  </div>
+
+</div>
+
+</body>
+</html>

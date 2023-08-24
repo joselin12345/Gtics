@@ -7,8 +7,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class login {
 
     @GetMapping("/login")
-    public String inicio(){
+    public String login(){
         return "login";
+    }
+
+    @GetMapping("/newUser")
+    public String registrarse(){
+        return "newUser";
     }
 
 }
